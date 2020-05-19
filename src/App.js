@@ -3,9 +3,10 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
 
-const HatsPage = () => (
+const HatsPage = props => (
   <div>
     <h1>Hats Page</h1>
+    <button onClick={() => props.history.push("/")}>Back</button>
   </div>
 );
 
